@@ -5,15 +5,8 @@ export const addExpense = (expense) => ({
 	expense
 });
 
-export const startAddExpense = (expenseData = {}) => {
+export const startAddExpense = ({ description = '', note = '', amount = 0, createdAt = 0 } = {}) => {
 	return (dispatch) => {
-
-		const {
-		  description = '',
-		  note = '',
-		  amount = 0,
-		  createdAt = 0
-		} = expenseData;
 
 		const expense = { description, note, amount, createdAt };
 
