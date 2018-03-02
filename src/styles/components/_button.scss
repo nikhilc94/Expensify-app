@@ -8,6 +8,7 @@
 	display: inline-block;
 	text-decoration: none;
 	line-height: 1;
+	border: none;
 }
 
 .button--link {
@@ -15,7 +16,7 @@
 	color: white; 
 }
 
-.button--secondary {
-	background-color: #888;
+.button--delete {
+	background: lighten(red, 10);
 }
 

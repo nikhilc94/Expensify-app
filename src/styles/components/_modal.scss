@@ -1,0 +1,46 @@
+.ReactModalPortal > div {
+	opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+	transition: opacity 200ms ease-in-out;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.ReactModalPortal .ReactModal__Overlay--after-open {
+	opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+	opacity: 0;
+}
+
+.modal {
+	background: $dark-blue;
+	color: $light-grey;
+	max-width: 50rem;
+	outline: none;
+	padding: $l-size;
+	text-align: center;
+}
+
+.modal__message {
+	font-weight: 300;
+	margin: $m-size;
+	word-break: break-all;
+}
+
+.modal__item {
+	font-weight: 700;
+	margin: $m-size;
+	word-break: break-all;
+}
+
+.button-1 {
+	margin-right: $s-size;
+}
+
+.button-2 {
+	margin-left: $s-size;
+}
